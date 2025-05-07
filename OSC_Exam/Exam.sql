@@ -269,4 +269,16 @@ SELECT name
 FROM sys.tables;
 
 
+SELECT Number As NumFloor FROM Library_Floor ;
+SELECT * FROM Employee;
+SELECT  E_Mail   As E_mail FROM Users;
+SELECT * FROM User_Phone;
+SELECT * FROM Category
+SELECT * FROM Publisher;
+SELECT Id ,  Publisher_Id FROM Book;
+SELECT * FROM Author;
+SELECT * FROM Sheif;
+SELECT User_SSN  , Book_id , Amount FROM User_Borrow;
+SELECT * FROM Book_Author ; 
+
 
