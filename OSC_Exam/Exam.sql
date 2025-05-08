@@ -42,7 +42,7 @@ CREATE TABLE Employee (
     Floor_Num INT,
     Manager_id INT
 );
------ اضطريت اني اغير الميل من تيكست ل كاركتر علشان كنت يونيك
+----- اضطريت اني اغير الميل من تيكست ل كاركتر علشان كنت عايزه يونيك
 
 ALTER TABLE Employee
 ALTER COLUMN E_Mail VARCHAR(100);
@@ -105,7 +105,7 @@ CREATE TABLE Category (
 
 ---------Insertion--------
 INSERT INTO Category VALUES
-(1 , 'Science Fiction'),
+(1 , 'Science'),
 (2, 'History');
 
 SELECT * FROM Category
@@ -264,11 +264,11 @@ ADD FOREIGN KEY (User_SSN) REFERENCES Users(SSN);
 ALTER TABLE User_Borrow
 ADD FOREIGN KEY (Book_id) REFERENCES Book(Id);
 
-
+----Display all Tables ---
 SELECT name 
 FROM sys.tables;
 
-
+-------- Selections -------
 SELECT Number As NumFloor FROM Library_Floor ;
 SELECT * FROM Employee;
 SELECT  E_Mail   As E_mail FROM Users;
